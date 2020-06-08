@@ -66,7 +66,7 @@ class PointsController {
         city,
         uf
       }
-
+      console.log(point);
       const trx = await knex.transaction();
 
       const insertedPointId  = await trx('points').insert(point);
